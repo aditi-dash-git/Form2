@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button{
+        -webkit-appearance:none;
+        margin:0;
+    }
+        .h1{
+            display: flex;
+            width: 300px;
+            border-radius: 10%;
+            margin-left: 40%;
+            justify-content: center;
+            border: 5px solid rgb(0, 0, 0);
+            background-color: bisque;
+            font-style: italic;
+        }
+        .body{
+            display: flex;
+            font-size: large;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-left: 20px;
+            font-weight: 900;
+            text-align:left;
+            
+        }
+        .eligible{
+            display: flex;
+            justify-content:center;
+            font-size:larger;
+            font-weight:bolder;
+            border:1px dashed;
+            text-decoration-line: underline;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-style: oblique;
+        }
+        .image{
+            display: flex;
+            width:500px;
+            height:300px;
+            margin-left: 30%;
+            padding-top: 5%;
+        }
+    </style>
+</head>
+<body style="background-color: #03cc66">
+    <form action="backend.php">
+        <h1 class="h1">FORM</h1>
+        <div class="body">
+            <div class="eligible">
+                Eligibility Criteria: <a href="eligiblecriteria.txt"> click here</a>
+            </div >
+
+            <br>
+            <div>
+                First Name: <input type="text" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <br>
+            <div>
+                Middle Name: <input type="text" name="name" placeholder="Enter your name">
+            </div>
+            <br>
+            <div>
+                Last Name: <input type="text" name="name" placeholder="Enter your name" required>
+            </div>
+            
+            <br>
+            <div>
+                Email-address: <input type="text" name="myemail" id="email" placeholder="abc@gmail.com" required>
+            </div>
+            <br>
+            <div>
+                <label for="Branch" id="br">Branch:</label>
+                <input type="text" name="branch" id="br">
+            </div>
+
+            <br>
+            <div>
+                CGPA: <input type="number" name="cgpa" id="cg">
+            </div>
+
+            <br>
+            <div>
+                <label for="gender" >Gender:</label>
+                <select name="gender" id="sex" required>
+                    <option value="select" selected>Select </option>
+                    <option value="male" >Male </option>
+                    <option value="female" >Female </option>
+                    <option value="Others" >Others </option>
+                </select>
+                
+            </div>
+
+            <br>
+            <div>
+                Date of Birth: <input type="datetime-local" name="dob" id="dob">
+            </div>
+
+            <br>
+            <div>
+                Nationality: 
+                Indian: <input type="radio" name="mynationality">
+                Outside: <input type="radio" name="mynationality">
+            </div>
+
+            <br>
+            <div>
+                    Phone No.: <input type="text" maxlength="13" placeholder="+91 ----------" required>
+            </div>
+
+            <br>
+            <div>
+                Address: 
+                <br><textarea name="address" id="add" rows="5" cols="50" placeholder="Enter your present address"></textarea>
+            </div>
+
+            <br>
+            <div>
+                Write About Yourself:
+                <br>
+                <textarea name="mytext" cols="50" rows="10" id="wbu" maxlength="50"></textarea> 
+            </div>
+
+            <br>
+            <div>
+                <input type="checkbox" required>I agree that all the above given information are true to the best of my belief and any wrong -information may lead to rejection of my form.
+            </div>
+
+            <br>
+            <div style="display: flex;">
+                <input style="margin: 0%  20%; font-size:x-large;background-color:yellow " type="submit" value="Submit Now" >
+                <input style="margin:0%; font-size:x-large; background-color:yellow" type="reset" value="Reset Now">
+            </div>
+            
+            
+        </div>
+        <img class="image" src="https://media.istockphoto.com/id/1311939407/vector/thank-you-ink-brush-vector-lettering.jpg?s=612x612&w=0&k=20&c=vXYFAtBGR0MgPaIHAHOPcECRJI0bSv4Bg_nLiF5XxQ0=" alt="No image">
+    </form>
+</body>
+</html>
